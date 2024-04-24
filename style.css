@@ -1,0 +1,40 @@
+*{
+    overflow-x: hidden;
+    font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+.center-container {
+    display: flex;
+    justify-content: center;
+  }
+border{
+    box-shadow: 0 10px 40px 10px rgba(142, 16, 16, 0.15);
+}
+
+/* HERO */
+.name{
+    color:  #fb9e9f;
+}
+.letter{
+    letter-spacing: 5px;
+    color: #6B7280;
+}
+.body{
+    background-color: #f9fafb;
+}
+
+
+.size{
+    background-size: cover;
+    height: 70px;
+}
+hr{
+    height: 5px;
+    background-color: red;
+}
+
+.font{
+    color:black;
+    background-color: rgb(228, 233, 223);
+}
