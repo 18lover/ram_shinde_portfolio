@@ -6,149 +6,191 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Rameshwar shinde</title>
   </head>
   <body>
 
                                                                   <!-- NAVBAR -->
-    <div class="container center-container pb-4">
-      <div class="p-1 row border rounded-pill shadow" style="width: 700px;">
-        <div class="row col">
-          <div class="p-0 fw-bolder d-flex justify-content-center align-items-center">
-            Rameshwar
+    <div class="container center-container" id="navbar" >
+      <div class="border rounded-pill shadow row" id="shadow">
+          <div class="col-7 col-md-6 p-0 ps-2 ps-sm-4 right-section pt-2" >
+            <p class="fw-bold header-name">Rameshwar</p>
           </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 col-8">
-          <div class="col p-0">
-            <a role="button" class="btn">About</a>
+          <div class="left-section p-0 col-0 col-md-6 d-none d-md-block">
+            <ul class="row pt-2">
+              <li role="button" class="col-3  hover p-1 text-center"><a href="#hero">About</a></li>
+              <li role="button " class="col-3 hover p-1 text-center"><a href="#projects">Projects</a></li>
+              <li role="button " class="col-3 hover p-1 text-center"><a href="#footer">Contact</a></li>
+            </ul>
+          </div> 
+          <div class="dropdown d-block d-md-none col-5 col-md-0 d-flex justify-content-end align-items-center">
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+              <a href="#hero">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#footer">Contact</a>
+            </div>
           </div>
-          <div class="col p-0">
-            <a role="button" class="btn">Projects</a>
-          </div>
-          <div class="col p-0">
-            <a role="button" class="btn">Blogs</a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-                                                                  <!-- HERO -->
-    <div class="container mt-5 center-container">
-  <div class="row row-cols-1 row-cols-sm-2 gx-md-5 mt-5   pt-md-5" style="width: 1000px;">
-    <div class="col mb-5 pb-0 mt-md-4 ">
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <p class="fs-1 name">Shinde Rameshwar</p>
-        <p class="fs-2 fw-bolder">The web developer</p>
-        <a class="btn btn-success text-wrap" href="#" role="button" style="width: 8rem;">Know more</a>
+      
+      
+      <!-- HERO -->
+      <div class="container mb-0 pb-0 mt-5 pt-3  mb-sm-5  center-container" id="hero">
+    <div class="row row-cols-1 row-cols-sm-2 mt-5   pt-md-5" style="width: 1000px;">
+      <div class="col mb-5 pb-0 mt-md-4 d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <p class="name">Shinde Rameshwar</p>
+          <p class="fw-bolder field">The web developer</p>
+          <a class="btn btn-primary text-wrap" href="#" role="button" style="width: 8rem;">Know more</a>
+        </div>
       </div>
-    </div>
-    <div class="col mb-4 ">
-      <div class="d-flex justify-content-center ">
-        <img class="img-fluid" src="images/portfolio1.svg">
+      <div class="col mb-4 ">
+        <div class="d-flex justify-content-center ">
+          <img class="img-flui myphoto" src="images/portfolio1.svg">
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-                                                                  <!-- BODY -->
-                                                                  <hr>
-
-  <div class="container-fluid body pt-5 pt-md-5 pb-5">
-    <div class="container">
-      <p class="text-center fw-bolder fs-1">Technology</p>
-      <p class="text-center letter text-dark-light "> I'm Familiar With</p>
-      <div class="container pt-5">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col d-flex justify-content-center align-items-center">
-            <img src="images/portfolio2.svg " class="img-fluid">
-          </div>
-          <div class="col pt-5">
-            <div class="col-12 row pt-md-5">
-
-            <div class="col card  bg-transparent border-0 px-xl-5" >
-              <img src="images/html.svg" class="card-img-top size" alt="...">
-              <div class="card-body p-0 text-center ">
-                <p class="card-title fs-6 p-0">HTML</p>
-              </div>
+  
+                                                                    <!-- BODY -->
+                                                                    <hr class="hr">
+  
+   
+        <div class="container-fluid body pt-5 pt-md-5 pb-5" id="hero">
+      <div class="container">
+        <p class="text-center fw-bolder fs-1" data-aos="fade-right" data-aos-duration="500">Technologies</p>
+        <p class="text-center letter text-dark-light " data-aos="fade-left" data-aos-duration="500"> I'm Familiar With</p>
+        <div class="container pt-5">
+          <div class="row row-cols-1 row-cols-md-2 mb-5">
+            <div class="col pb-5 pb-md-0 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="600">
+              <img src="images/portfolio2.svg " class="img-fluid" >
             </div>
-
-            <div class="col card bg-transparent border-0  px-xl-5" >
-              <img src="images/css.svg" class="card-img-top size" alt="...">
-              <div class="card-body p-0 text-center ">
-                <p class="card-title fs-6 p-0">CSS</p>
-              </div>
-            </div>
-            
-            <div class="col card bg-transparent border-0  px-xl-5" >
-              <img src="images/JS.svg" class="card-img-top size" alt="...">
-              <div class="card-body p-0 text-center ">
-                <p class="card-title fs-6 p-0">JS</p>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-12 row pt-md-5 ">
-
-              <div class="col card  bg-transparent border-0  px-xl-5" >
-                <img src="images/c.jpg" class="card-img-top size" alt="...">
-                <div class="card-body p-0 text-center ">
-                  <p class="card-title fs-6 p-0">C</p>
-                </div>
+          <div class="col pt-5 lan-section d-flex justify-content-center align-items-center ">
+            <div class="col-9 row pt-md-5 pt-5 ">
+  
+              <div class="col card me-3 " data-aos="flip-up" data-aos-duration="600">
+                <img src="images/html.svg" class="card-img-top size" alt="...">
+                <p class="card-text text-center mb-0">HTML</p>
               </div>
   
-              <div class="col card bg-transparent border-0  px-xl-5" >
-                <img src="images/cpp.jpg" class="card-img-top size" alt="...">
-                <div class="card-body p-0 text-center ">
-                  <p class="card-title fs-6 p-0">CPP</p>
-                </div>
+              <div class="col card me-3 " data-aos="flip-up" data-aos-duration="600">
+                <img src="images/css.png" class="card-img-top size" alt="...">
+                <p class="card-text text-center mb-0">CSS</p>
               </div>
               
-              <div class="col card bg-transparent border-0  px-xl-5" >
-                <img src="images/python.jpg" class="card-img-top size" alt="...">
-                <div class="card-body p-0 text-center ">
-                  <p class="card-title fs-6 p-0">PYTHON</p>
+              <div class="col card" data-aos="flip-up" data-aos-duration="600">
+                <img src="images/JS.svg" class="card-img-top size" alt="...">
+                <p class="card-text text-center mb-0">JS</p>
+              </div>
+            </div>
+  
+            <div class="col-9 row pt-md-5 pt-5 ">
+  
+                <div class="col card me-3 " data-aos="flip-up" data-aos-duration="600">
+                  <img src="images/c.jpg" class="card-img-top size" alt="...">
+                  <p class="card-text text-center mb-0">C</p>
+                </div>
+    
+                <div class="col card me-3 " data-aos="flip-up" data-aos-duration="600">
+                  <img src="images/cpp.png" class="card-img-top size" alt="...">
+                  <p class="card-text text-center mb-0">CPP</p>
+                </div>
+                
+                <div class="col card" data-aos="flip-up" data-aos-duration="600">
+                  <img src="images/python.jpg" class="card-img-top size" alt="...">
+                  <p class="card-text text-center mb-0">PY</p>
                 </div>
               </div>
-              </div>
-
-              <div class="col-12 row pt-md-5 ">
-
-                <div class="col-4 card  bg-transparent border-0  px-xl-5" >
-                  <img src="images/java.jpg" class="card-img-top size" alt="...">
-                  <div class="card-body p-0 text-center ">
-                    <p class="card-title fs-6 p-0">JAVA</p>
+  
+              <div class="col-9 row pt-md-5 pt-5 ">
+  
+                  <div class="col-4 card me-2" data-aos="flip-up" data-aos-duration="600">
+                    <img src="images/java.jpg" class="card-img-top size" alt="...">
+                    <p class="card-text text-center mb-0">JAVA</p>
                   </div>
-                </div>
-     
-                <div class="col-4 card bg-transparent border-0  px-xl-5" >
-                  <img src="images/sql.jpg" class="card-img-top size" alt="...">
-                  <div class="card-body p-0 text-center ">
-                    <p class="card-title fs-6 p-0">SQL</p>
+       
+                  <div class="col-4 card me-2" data-aos="flip-up" data-aos-duration="600">
+                    <img src="images/sql.png" class="card-img-top size" alt="...">
+                    <p class="card-text text-center mb-0">SQL</p>
                   </div>
+  
                 </div>
-
-                </div>
-
-            
-          </div>
+  
+            </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>                                                              
+        </div>         
+        <hr class="hr">
+        
+        <!-- PTROJECTS -->
 
+        <div id="projects" class="container-fluid pt-5" >
+          <div class="container">
 
-                                                                                  <!-- FOOTER -->
+            <div class="head text-center mb-5">
+              <h3 class="fw-bolder">My work</h3>
+              <p class="letter text-dark-light">I Love to build projects</p>
+            </div>
 
-  <div class="container-fluid font fw-bolder fs-4 ">
-    <p class="text-center ">Get in touch</p>
-    <div class="text-center border rounded-pill">
-        <a href="https://www.linkedin.com/in/rameshwar-shinde-51147b261/"><img src="images/linkedin1.svg"></a>
-        <a href="https://www.instagram.com/?next=%2F&hl=en"><img src="images/instagram1.svg"></a>
-        <a href="https://github.com/"><img src="images/github.svg"></a>
-    </div>
-  </div>                                                                              
+            <div class="project-section text-center mt-5">
+              <div class="row text-center pt-5 outer">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+
+                  <div class="first mb-5">
+                    <div class="image">
+                      <img src="/responsive_portfolio/images/amazon.png" class="img-fluid " alt="">
+                    </div>
+                    <div class="project-name mt-4">
+                      <h3 class="fw-bolder">Amazon Clone</h3>
+                    </div>
+                    <div class="ps-5 pt-3 pe-5 info d-none d-md-block text-start">
+                      <p>I created the Amazon clone project with the help of <b>HTML, CSS, JS</b>. I also used <b>bootstrap</b> to make web resposive. <br> This is my first project with js. Every moment I had to think about what could be used now and it has helped me improve my skills. <br>Its not complete yet <br></p>
+                    </div>
+                    <a href="https://18lover.github.io/amazo_clone/" class="link">Open live</a><br>
+                    <button class="button mb-3 px-1 px-md-5 py-2"  ><a href="https://github.com/18lover/amazo_clone">View source code</a></button>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                  <div class="first mb-5">
+                    <div class="image">
+                      <img  src="/responsive_portfolio/images/stone.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="project-name mt-4">
+                      <h3 class="fw-bolder">Stone Paper Scissor</h3>
+                    </div>
+                    <div class="ps-5 pe-5 info d-none d-md-block text-start">
+                      <p>I created a simple which we have been playing childhood with the help of <b>HTML, CSS, JS</b>. <br>I also used <b>bootstrap</b> to make web resposive. <br>Create this type of projects motivate me.  <br></p>
+                    </div>
+                    <a href="https://18lover.github.io/rock_paper_scissor_game" class="link">Open live</a><br>
+                    <button class="button mb-3 px-1 px-md-5 py-2"  ><a href="https://github.com/18lover/amazo_clone">View source code</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+       
   
-
-
-  </body>
+  
+                                                                                    <!-- FOOTER -->
+    <div class="container-fluid font fw-bolder fs-4 border" id="footer">
+      <div class="container d-flex flex-column align-items-center">
+        <p class="text-center pt-4">Get in touch</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/rameshwar-shinde-51147b261/"><img src="images/linkedin1.svg"></a>
+            <a href="https://www.instagram.com/?next=%2F&hl=en"><img src="images/instagram1.svg"></a>
+            <a href="https://github.com/"><img src="images/github.svg"></a>
+        </div>
+      </div>
+    </div>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="module" src="main.js"></script>
+</body>
 </html> 
